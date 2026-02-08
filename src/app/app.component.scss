@@ -1,0 +1,36 @@
+:host { display: block; height: 100vh; }
+.maintenance {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #0f172a 0%, #0b1220 100%);
+	color: #e6eef8;
+	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	padding: 24px;
+}
+.card {
+	background: rgba(255,255,255,0.04);
+	padding: 36px 48px;
+	border-radius: 14px;
+	box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+	text-align: center;
+	max-width: 520px;
+	width: 100%;
+	backdrop-filter: blur(6px);
+	border: 1px solid rgba(255,255,255,0.06);
+}
+.logo svg { color: #9fb7ff; margin-bottom: 12px; }
+h1 { margin: 0 0 8px; font-size: 1.6rem; font-weight: 600; color: #fff; }
+p { margin: 0 0 18px; color: rgba(230,238,248,0.85); line-height: 1.4; }
+.spinner {
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 4px solid rgba(255,255,255,0.12);
+	border-top-color: #9fb7ff;
+	animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
